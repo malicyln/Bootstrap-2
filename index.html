@@ -18,10 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
 
-  <body>
+  <body id="body">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
@@ -146,7 +146,7 @@
 
     <!-- ABOUT-US -->
     <main>
-      <section id="about" class="container bg-light mt-3">
+      <section id="about" class="container bg-light p-3">
         <h1 class="text-danger text-center display-6">ABOUT US</h1>
         <div class="row justify-content-center text-center">
           <div class="col-sm-12 col-md-6 col-lg-4">
@@ -179,7 +179,7 @@
           </div>
         </div>
       </section>
-
+      <!-- INSTRUCTORS -->
       <section id="instructors" class="container bg-dark p-2">
         <h1 class="text-danger text-center display-6">OUR INSTRUCTORS</h1>
         <div class="row g-3 justify-content-center">
@@ -322,7 +322,235 @@
           </div>
         </div>
       </section>
+
+      <!-- STUDENTS -->
+      <section id="students" class="container bg-light p-3">
+        <h1 class="text-center text-danger display-6">OUR STUDENTS</h1>
+        <div
+          class="row justify-content-center text-center align-items-center g-3"
+        >
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vel
+              corrupti error adipisci aperiam aut? At commodi magni nulla hic
+              modi nobis, vero quia? Incidunt eligendi odit sit at eos beatae,
+              officiis distinctio deserunt amet rerum culpa architecto, nisi
+              nemo!
+            </p>
+            <button class="btn btn-danger">Learn More</button>
+          </div>
+          <div class="col-md-6">
+            <img src="./img/students1.png" width="70%" alt="students" />
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSES -->
+
+      <section id="courses" class="container bg-dark p-3">
+        <h1 class="text-center text-danger display-6">COURSES</h1>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#fs-images"
+              type="button"
+              role="tab"
+            >
+              Full-Stack
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ds-images"
+              type="button"
+              role="tab"
+            >
+              Data-Science
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dev-images"
+              type="button"
+              role="tab"
+            >
+              DevOps
+            </button>
+          </li>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="fs-images"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs1.jpg">
+                  <img src="./img/thumbnail/fs1.jpg" class="img-thumbnail" alt="Full_Stack_1">
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs2.jpg">
+                  <img src="./img/thumbnail/fs2.jpg" class="img-thumbnail" alt="Full_Stack_2">
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs3.jpg">
+                  <img src="./img/thumbnail/fs3.jpg" class="img-thumbnail" alt="Full_Stack_3">
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="./img/thumbnail/fs4.jpg">
+                  <img src="./img/thumbnail/fs4.jpg" class="img-thumbnail" alt="Full_Stack_4">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ds-images"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ds1.jpg">
+                <img src="./img/thumbnail/ds1.jpg" class="img-thumbnail" alt="Data_Science_1">
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ds2.jpg">
+                <img src="./img/thumbnail/ds2.jpg" class="img-thumbnail" alt="Data_Science_2">
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ds3.jpg">
+                <img src="./img/thumbnail/ds3.jpg" class="img-thumbnail" alt="Data_Science_3">
+              </a> 
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ds4.jpg">
+                <img src="./img/thumbnail/ds4.jpg" class="img-thumbnail" alt="Data_Science_4">
+              </a>
+            </div>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="dev-images"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ops1.jpg">
+                <img src="./img/thumbnail/ops1.jpg" class="img-thumbnail" alt="DevOps_1">
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ops2.jpg">
+                <img src="./img/thumbnail/ops2.jpg" class="img-thumbnail" alt="DevOps_2">
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ops3.jpg">
+                <img src="./img/thumbnail/ops3.jpg" class="img-thumbnail" alt="DevOps_3">
+              </a> 
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a data-fslightbox href="./img/thumbnail/ops4.jpg">
+                <img src="./img/thumbnail/ops4.jpg" class="img-thumbnail" alt="DevOps_4">
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+
+      <section id="contact" class="container bg-light p-3">
+        <h1 class="text-danger text-center display-6">CONTACT</h1>
+
+        <article id="form">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur minima dolor atque nisi corporis ipsa! Nisi vel sint assumenda, nobis dolores repudiandae eaque dolorem commodi numquam voluptatem qui iusto?
+          </p>
+          <div class="row justify-content-center text-center g-3">
+            <div class="col-md-4">
+              <i class="fas fa-phone"></i>
+              <h5>Telephone</h5>
+              <a href="tel:+9023409567">+9023409567</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fab fa-whatsapp"></i>
+              <h5>Whatsapp</h5>
+              <a href="https://wa.me/+9023409567">+9023409567</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope"></i>
+              <h5>Email</h5>
+              <a href="mailto:info@clarusway.com">info@clarusway.com</a>
+            </div>
+          </div>
+          <form class="row g-3 mt-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="email" placeholder="Enter Email">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" id="subject" placeholder="Enter Subject">
+            </div>
+            <div class="form-floating col-12">
+              <textarea class="form-control" placeholder="Enter Your Comments" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Enter Your Comments</label>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-danger" style="width: 7rem">Submit</button>
+            </div>
+          </form>
+        </article>
+        <article id="location" class="mt-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212189.50394762034!2d-118.29584976363104!3d33.80041458522768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cae84099d759%3A0xa1003afac42a8faa!2sLong%20Beach%2C%20Kaliforniya%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1654172644849!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+      </section>
     </main>
+
+     <!-- FOOTER -->
+     <footer class="bg-dark text-center text-white p-4">
+      <article>
+        <a href="#"><i class="fab fa-facebook-f"></i></a
+        ><a href="#"><i class="fab fa-youtube"></i></a
+        ><a href="#"><i class="fab fa-linkedin"></i></a
+        ><a href="#"><i class="fab fa-instagram"></i></a>
+      </article>
+
+      <article class="p-4 h6">&copy; 2022 Copyright by Clarusway</article>
+    </footer>
+
+    <!-- UP-BTN -->
+
+    <a class="up-btn" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- SCRIPTS-->
+    <script src="./lib/fslightbox-basic-3.3.1/fslightbox.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
